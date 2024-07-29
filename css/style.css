@@ -1,0 +1,407 @@
+/*reset*/
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos mobile*/
+
+/*estilos de header*/
+
+.loguitochico{
+    width: 93px;
+    margin-top: 5px;
+}
+
+/*acá le apliqué flexbox para mover a todo el contenido de nav hacia la derecha*/
+header{
+    height: 100px;
+    background-color: #c0ac8c;
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0; 
+    width: 100%;
+}
+
+nav{
+    width: 50%;
+    
+}
+
+header nav ul{
+
+    list-style: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-right: 10px;
+}
+
+
+/*
+header nav ul li a{
+    background-color: #c0ac8c;
+    color: whitesmoke;
+    text-decoration: none;
+}  
+*/
+
+header img{
+    margin: 5px;
+}
+
+/*estilos de main*/
+main{
+    background-color: #cde8ff71;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+div .bannercentrado{
+    width: 2000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.bannercentrado img{
+    width: 50%;
+    align-items: center;
+    
+}
+
+/*main{
+    margin: 30px 30px;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: repeat(3, 25%);
+    grid-template-columns: 1fr;
+    align-content: center;
+    row-gap: 20px;
+    
+}*/
+
+main h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main h2{
+    text-align: center;
+    color: #201812cc;
+}
+
+/*estilos main index*/
+.adrimaschica{
+    width: 300px;
+}
+ 
+main section div p{
+    color: #3b14a7;
+}
+
+.marron{
+    color: rgba(167, 11, 11, 0.918);
+}
+
+
+
+/*estilos main html realeggza*/
+.infoencabezado{
+    font-size: x-large;
+    color: #491f0bb7;
+}
+
+/*estilos main html cuadros*/
+ 
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 500px 500px 500px 500px;
+    margin-top: 5px;
+    padding-top: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    
+}
+
+section .tamañoimg{
+    width:  80%;
+}
+
+img .grid-img1{
+    border: 5px solid black;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+p .grid-txt1{
+
+    margin-left: 50px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: 1px solid black;
+    
+}
+
+a .grid-link1{
+    border: 1px solid black;
+    grid-column: 3/3;
+    grid-row: 1/2;
+    margin-right: 30px;
+}
+
+img .grid-img2{
+
+    border: 1px solid black;
+    grid-column: 1/2;
+    grid-row: 2/4; 
+}
+
+p .grid-txt2{
+    border: 1px solid black;
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+a .grid-link2{
+    border: 1px solid black;
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+
+img .grid-img3{
+    border: 1px solid black;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+p .grid-txt3{
+    border: 1px solid black;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+a .grid-link3{
+    border: 1px solid black;
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+img .grid-img4{
+    border: 1px solid black;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+
+
+/*estilos main macrame*/
+.maschico{
+    width: 600px;
+}
+
+
+
+
+/*estilos main realeggza*/
+
+.smallegg{
+    width: 300px;  
+}
+
+
+.flexproductos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+
+ }
+
+
+ main a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: #0b4249ce;
+    background-color: #e4b46d8c;
+    text-transform: capitalize;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 2px solid rgba(110, 45, 148, 0.596)
+ }
+
+main a:hover{
+    background-color: rgba(58, 63, 68, 0.603);
+}
+
+/*estilos main html cuadros*/
+
+main div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*estilos main html contacto*/
+
+.logochiquitoredes{
+    width: 50px;
+}
+
+footer{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.footercentrado{
+    text-align: center;
+    font-size: smaller;
+}
+
+
+
+/*mq desktop*/
+ @media screen and (min-width: 1024px){
+ 
+    main{
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: 40% 40% 10% ;
+    }
+ }
+
+
+/*practica FLEX*/
+
+
+/*.flex-container img{
+    width: 200px;
+    background-color: chartreuse;
+    display: flex;
+    flex-flow: nowrap;  
+}   */
+
+
+/*
+
+.flex-item p{
+    border: 1px solid green;
+    background-color: papayawhip;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    margin: 5px;
+}
+
+.flex-container{
+    border: 1px solid black;
+    background-color: rgba(180, 74, 74, 0.726);
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.flex-item1 p{
+    background-color: coral;
+    border: 1px solid green;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    height: 200px;
+    line-height: 200px;   
+    text-align: center;
+    margin: 5px;   
+    order: 3;
+}
+
+
+.flex-item2 p{
+    background-color: rgb(80, 255, 89);
+    border: 1px solid green;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;    
+    text-align: center;
+    margin: 5px;  
+    order: 2;
+}
+
+.flex-item3 p{
+    background-color: rgb(255, 210, 11);
+    border: 1px solid green;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;   
+    margin: 5px;   
+    order: 1;
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
