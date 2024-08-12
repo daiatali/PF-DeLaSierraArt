@@ -1,0 +1,12 @@
+@import "../utilidades/variables";
+
+@mixin boton{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: #0b4249ce;
+    background-color: #e4b46d8c;
+    text-transform: capitalize;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 2px solid rgba(110, 45, 148, 0.596)
+}

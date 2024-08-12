@@ -1,0 +1,255 @@
+//import
+@import "utilidades/variables";
+@import "utilidades/mixin";
+
+//propiedades de reset
+@import "utilidades/reset";
+
+/*estilos mobile*/
+/*estilos de header y footer*/
+
+.loguitochico{
+    width: 93px;
+    margin-top: 5px;
+}
+
+.animacion-uno{
+    border: 2px solid black;
+    max-width: 70%;
+    max-height: 70%;
+    border-radius: 3px;
+    scale: 0.87;
+    transition: transform 0.3s;
+    transition-timing-function: cubic-bezier(0.4, 1.55, 0.74, 0.55);
+  }
+
+.animacion-uno:hover{
+    transform: scale(1.11);
+}
+
+header{
+    height: 100px;
+    background-color: $color-principal;
+    display: flex;
+    position: sticky;
+    z-index: 2;
+    nav{
+            a{
+                background-color: #c0ac8c;
+                color: whitesmoke;
+                text-decoration: none;
+            }
+    }
+    img{
+        margin: 5px;
+    }
+}
+
+h1, h2{
+    margin-top: 12px;
+    text-align: center;
+    color: $color-titulos;
+}
+
+footer{
+    background-color: aliceblue;
+    text-align: center;
+    p{
+    font-size: smaller;
+    }
+    padding-top: 40px;
+}
+
+/*estilos de main*/
+.infoencabezado{
+    padding: 3%;
+    font-size: 20px;
+    text-align: center;
+    color: #491f0bb7;
+}
+
+main{
+    font-family: $fuente;
+    .bannercentrado{
+        position: relative;
+        justify-items: center;
+        align-items: center;
+        div{
+            position: absolute;
+            left: 5%;
+                    
+            h1{
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 25px;
+            }
+            h2{
+                text-align: center;
+                color: #201812cc;
+            }
+        
+        }
+        img{
+            width: 99%;
+        
+        } 
+    } 
+    a{
+        @include boton;
+    }
+}
+
+
+/*estilos main index*/
+main{
+    background-color: whitesmoke;
+    .fotoadri{
+        text-align: center;
+        img{
+            width: 70%;
+            border: 2px solid $color-principal;
+            margin-top: 8px;
+        }
+    }
+    section{
+        div{
+            p{
+                color: #42326b;
+            }
+        }
+    }
+}
+
+/*estilos main html realeggza*/
+
+.smallegg{
+    width: 250px;  
+}
+
+.flexproductos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+    p{
+        padding: 15px;
+    }
+ }
+
+/*estilos main html cuadros*/
+.grid-container{
+    display: none;
+}
+.flex-container{
+    text-align: center;
+    img{
+        width: 70%;
+        margin: 20px;
+    }
+    p{
+        margin: 15px; 
+    }
+}
+
+
+/*estilos main macrame*/
+.maschico{
+    width: 600px;
+}
+
+main a:hover{
+    background-color: rgba(58, 63, 68, 0.603);
+}
+
+//estilos main html contacto
+@import "utilidades/contacto";
+
+/*mq desktop*/
+ @media screen and (min-width: 768px){
+    footer{
+        padding-top: 15px;
+    }
+    h1, h2{
+        text-align: center;
+    }
+    p{
+        padding: 15px;
+    }
+    .flex-container{
+        display: none;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-rows: 370px 370px 370px 370px;
+        margin-top: 5px;
+        padding-top: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        text-align: center;
+        img{
+            width: 80%;
+            border: 1px solid black;
+        }
+        p, a{
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            margin: 15px;
+        }
+        a{
+            width: 50%;
+            margin-left: 92px;
+        }
+    }
+    
+    .grid-img1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .grid-txt1{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .grid-link1{
+        grid-column: 3/3;
+        grid-row: 1/2;
+}
+    
+    .grid-img2{
+        grid-column: 1/2;
+        grid-row: 2/3; 
+    }
+    
+    .grid-txt2{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .grid-link2{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    
+    .grid-img3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .grid-txt3{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .grid-link3{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    
+    .grid-img4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+}
