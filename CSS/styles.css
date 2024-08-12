@@ -48,6 +48,10 @@ h1, h2 {
   color: rgb(17, 16, 16);
 }
 
+p {
+  padding: 20px;
+}
+
 footer {
   background-color: aliceblue;
   text-align: center;
@@ -188,7 +192,7 @@ h1 {
     text-align: center;
   }
   p {
-    padding: 15px;
+    padding: 20px;
   }
   .flex-container {
     display: none;
