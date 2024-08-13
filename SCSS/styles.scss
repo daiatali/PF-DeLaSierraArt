@@ -10,6 +10,7 @@
 
 .loguitochico{
     width: 93px;
+    height: 93px;
     margin-top: 5px;
 }
 
@@ -28,7 +29,6 @@
 }
 
 header{
-    height: 100px;
     background-color: $color-principal;
     display: flex;
     position: sticky;
@@ -43,6 +43,12 @@ header{
     img{
         margin: 5px;
     }
+}
+
+.centrar-boton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 h1, h2{

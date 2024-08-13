@@ -9,6 +9,7 @@
 /*estilos de header y footer*/
 .loguitochico {
   width: 93px;
+  height: 93px;
   margin-top: 5px;
 }
 
@@ -27,7 +28,6 @@
 }
 
 header {
-  height: 100px;
   background-color: rgb(168, 145, 139);
   display: flex;
   position: sticky;
@@ -40,6 +40,12 @@ header nav a {
 }
 header img {
   margin: 5px;
+}
+
+.centrar-boton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 h1, h2 {
