@@ -52,7 +52,6 @@ header{
 }
 
 h1, h2{
-    margin-top: 12px;
     text-align: center;
     color: $color-titulos;
 }
@@ -86,7 +85,7 @@ main{
         align-items: center;
         div{
             position: absolute;
-            left: 5%;
+            width: 100%;
                     
             h1{
                 text-align: center;
@@ -117,7 +116,7 @@ main{
         text-align: center;
         img{
             width: 70%;
-            border: 2px solid $color-principal;
+            border: 5px solid $color-principal;
             margin-top: 8px;
         }
     }
@@ -177,11 +176,28 @@ main a:hover{
 
 /*mq desktop*/
  @media screen and (min-width: 768px){
+    .bannercentrado{
+        position: relative;
+        justify-items: center;
+        align-items: center;
+        div{
+            position: absolute;
+            width: 100%;
+                    
+            h1{
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 25px;
+            }
+            h2{
+                text-align: center;
+                color: #201812cc;
+            }
+        }
+    }
+
     footer{
         padding-top: 15px;
-    }
-    h1, h2{
-        text-align: center;
     }
     p{
         padding: 20px;
