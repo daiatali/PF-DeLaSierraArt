@@ -72,6 +72,8 @@ footer p {
 
 main {
   font-family: Times New Roman;
+  text-align: center;
+  background-color: whitesmoke;
 }
 main .bannercentrado {
   position: relative;
@@ -103,12 +105,6 @@ main a {
   padding: 15px 25px;
   border-radius: 10px;
   border: 2px solid rgba(110, 45, 148, 0.596);
-}
-
-/*estilos main index*/
-main {
-  text-align: center;
-  background-color: whitesmoke;
 }
 main .animacion-uno {
   width: 70%;

@@ -62,7 +62,6 @@ footer{
     p{
         font-size: smaller;
     }
-    
 }
 
 /*estilos de main*/
@@ -75,6 +74,8 @@ footer{
 
 main{
     font-family: $fuente;
+    text-align: center;
+    background-color: whitesmoke;
     .bannercentrado{
         position: relative;
         justify-items: center;
@@ -92,23 +93,14 @@ main{
                 text-align: center;
                 color: #201812cc;
             }
-        
         }
         img{
             width: 99%;
-        
         } 
     } 
     a{
         @include boton;
     }
-}
-
-
-/*estilos main index*/
-main{
-    text-align: center;
-    background-color: whitesmoke;
     .animacion-uno{
         width: 70%;
         border: 5px solid $color-principal;
@@ -124,176 +116,11 @@ main{
     }
 }
 
-/*estilos main html realeggza*/
-
-.smallegg{
-    width: 250px;  
-}
-
-.flexproductos{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 20px;
-    p{
-        padding: 15px;
-    }
- }
-
-/*estilos main html cuadros*/
-.grid-container{
-    display: none;
-}
-.flex-container{
-    text-align: center;
-    display: block;
-    img{
-        width: 70%;
-        margin: 10px;
-    }
-    p{
-        margin: 5px; 
-        padding: 10px;
-        margin-bottom: 5px;
-    }
-    a{
-        margin-top: 10px;
-    }
-}
-
-
-/*estilos main macrame*/
-.maschico{
-    width: 600px;
-}
-
-main a:hover{
-    background-color: rgba(58, 63, 68, 0.603);
-}
+//Cuadros, macramé, realeggza//
+@import "utilidades/productos";
 
 //estilos main html contacto
 @import "utilidades/contacto";
 
-/*mq desktop*/
- @media screen and (min-width: 768px){
-    .bannercentrado{
-        position: relative;
-        justify-items: center;
-        align-items: center;
-        div{
-            position: absolute;
-            width: 100%;
-            h1{
-                text-align: center;
-                text-transform: uppercase;
-                font-size: 25px;
-            }
-            h2{
-                text-align: center;
-                color: #201812cc;
-            }
-        }
-    }
-    main{
-        section{
-            div{
-                display: grid;
-                place-items: center;
-                p{
-                    width: 90%;
-                }
-            }
-        }
-    }
-    #fotoadri{
-        width: 40%;
-        max-height: 100%;
-    }
-    footer{
-        padding-top: 15px;
-    }
-    .flex-container{
-        display: none;
-    }
-    .grid-container{
-        display: grid;
-        grid-template-rows: 300px 350px 300px 300px;
-        margin-top: 5px;
-        padding-top: 5px;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-        text-align: center;
-        img{
-            width: 80%;
-            border: 1px solid black;
-            max-height: 100%;
-        }
-        p, a{
-            border: 1px solid black;
-            text-align: center;
-            padding: 20px;
-            margin: 15px;
-        }
-        a{
-            width: 50%;
-            margin-left: 92px;
-        }
-    }
-    
-    .grid-img1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    
-    .grid-txt1{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    
-    .grid-link1{
-        grid-column: 3/3;
-        grid-row: 1/2;
-    }
-    
-    .grid-img2{
-        grid-column: 1/2;
-        grid-row: 2/3; 
-    }
-    
-    .grid-txt2{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    
-    .grid-link2{
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-    
-    .grid-img3{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    
-    .grid-txt3{
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    
-    .grid-link3{
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-    
-    .grid-img4{
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .flexproductos{
-        img{
-            width: 30%;
-        }
-    }
-}
+//media query//
+@import "utilidades/mq";

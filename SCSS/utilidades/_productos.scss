@@ -1,0 +1,48 @@
+//Cuadros, macramé, realeggza//
+/*estilos main html realeggza*/
+
+.smallegg{
+    width: 250px;  
+}
+
+.flexproductos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+    p{
+        padding: 15px;
+    }
+ }
+
+/*estilos main html cuadros*/
+.grid-container{
+    display: none;
+}
+.flex-container{
+    text-align: center;
+    display: block;
+    img{
+        width: 70%;
+        margin: 10px;
+    }
+    p{
+        margin: 5px; 
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+    a{
+        margin-top: 10px;
+    }
+}
+
+
+/*estilos main macrame*/
+.maschico{
+    width: 600px;
+}
+
+main a:hover{
+    background-color: rgba(58, 63, 68, 0.603);
+}
