@@ -55,18 +55,14 @@ h1, h2{
     text-align: center;
     color: $color-titulos;
 }
-
-p{
-    padding: 20px;
-}
-
 footer{
     background-color: aliceblue;
     text-align: center;
+    padding-top: 40px;
     p{
         font-size: smaller;
     }
-    padding-top: 40px;
+    
 }
 
 /*estilos de main*/
@@ -111,19 +107,18 @@ main{
 
 /*estilos main index*/
 main{
+    text-align: center;
     background-color: whitesmoke;
-    .fotoadri{
-        text-align: center;
-        img{
-            width: 70%;
-            border: 5px solid $color-principal;
-            margin-top: 8px;
-        }
+    .animacion-uno{
+        width: 70%;
+        border: 5px solid $color-principal;
+        margin-top: 8px;
     }
     section{
         div{
             p{
                 color: #42326b;
+                padding: 15px 15px;
             }
         }
     }
@@ -152,12 +147,18 @@ main{
 }
 .flex-container{
     text-align: center;
+    display: block;
     img{
         width: 70%;
-        margin: 20px;
+        margin: 10px;
     }
     p{
-        margin: 15px; 
+        margin: 5px; 
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+    a{
+        margin-top: 10px;
     }
 }
 
@@ -183,7 +184,6 @@ main a:hover{
         div{
             position: absolute;
             width: 100%;
-                    
             h1{
                 text-align: center;
                 text-transform: uppercase;
@@ -195,19 +195,30 @@ main a:hover{
             }
         }
     }
-
+    main{
+        section{
+            div{
+                display: grid;
+                place-items: center;
+                p{
+                    width: 90%;
+                }
+            }
+        }
+    }
+    #fotoadri{
+        width: 40%;
+        max-height: 100%;
+    }
     footer{
         padding-top: 15px;
-    }
-    p{
-        padding: 20px;
     }
     .flex-container{
         display: none;
     }
     .grid-container{
         display: grid;
-        grid-template-rows: 370px 370px 370px 370px;
+        grid-template-rows: 300px 350px 300px 300px;
         margin-top: 5px;
         padding-top: 5px;
         grid-template-columns: 1fr 1fr 1fr;
@@ -216,6 +227,7 @@ main a:hover{
         img{
             width: 80%;
             border: 1px solid black;
+            max-height: 100%;
         }
         p, a{
             border: 1px solid black;
@@ -277,5 +289,11 @@ main a:hover{
     .grid-img4{
         grid-column: 1/2;
         grid-row: 4/5;
+    }
+
+    .flexproductos{
+        img{
+            width: 30%;
+        }
     }
 }

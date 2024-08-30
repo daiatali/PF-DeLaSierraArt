@@ -53,10 +53,6 @@ h1, h2 {
   color: rgb(17, 16, 16);
 }
 
-p {
-  padding: 20px;
-}
-
 footer {
   background-color: aliceblue;
   text-align: center;
@@ -111,18 +107,17 @@ main a {
 
 /*estilos main index*/
 main {
+  text-align: center;
   background-color: whitesmoke;
 }
-main .fotoadri {
-  text-align: center;
-}
-main .fotoadri img {
+main .animacion-uno {
   width: 70%;
   border: 5px solid rgb(168, 145, 139);
   margin-top: 8px;
 }
 main section div p {
   color: #42326b;
+  padding: 15px 15px;
 }
 
 /*estilos main html realeggza*/
@@ -148,13 +143,19 @@ main section div p {
 
 .flex-container {
   text-align: center;
+  display: block;
 }
 .flex-container img {
   width: 70%;
-  margin: 20px;
+  margin: 10px;
 }
 .flex-container p {
-  margin: 15px;
+  margin: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.flex-container a {
+  margin-top: 10px;
 }
 
 /*estilos main macrame*/
@@ -208,18 +209,26 @@ h1 {
     text-align: center;
     color: rgba(32, 24, 18, 0.8);
   }
+  main section div {
+    display: grid;
+    place-items: center;
+  }
+  main section div p {
+    width: 90%;
+  }
+  #fotoadri {
+    width: 40%;
+    max-height: 100%;
+  }
   footer {
     padding-top: 15px;
-  }
-  p {
-    padding: 20px;
   }
   .flex-container {
     display: none;
   }
   .grid-container {
     display: grid;
-    grid-template-rows: 370px 370px 370px 370px;
+    grid-template-rows: 300px 350px 300px 300px;
     margin-top: 5px;
     padding-top: 5px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -229,6 +238,7 @@ h1 {
   .grid-container img {
     width: 80%;
     border: 1px solid black;
+    max-height: 100%;
   }
   .grid-container p, .grid-container a {
     border: 1px solid black;
@@ -279,6 +289,9 @@ h1 {
   .grid-img4 {
     grid-column: 1/2;
     grid-row: 4/5;
+  }
+  .flexproductos img {
+    width: 30%;
   }
 }
 
